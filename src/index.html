@@ -12,7 +12,7 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="./styles/css/main.min.css" />
+    <link rel="stylesheet" href="./styles/main.scss" />
     <script src="scripts/main.js" defer></script>
   </head>
   <body class="page__body">
@@ -23,8 +23,184 @@
             >THE <br />
             MET</a
           >
+          <div class="icon-container">
+            <a href="#" class="icon icon--call"></a>
+            <a href="#" class="icon icon--burger"></a>
+          </div>
         </div>
+        <h1 class="title header__title">
+          Welcome <br />
+          to The MET
+        </h1>
       </div>
     </header>
+
+    <main>
+      <section class="page__section section schedule">
+        <div class="container">
+          <div class="grid grid--mobile-off">
+            <div
+              class="grid__item grid__item--tablet-1-4 grid__item--desktop-1-5"
+            >
+              <div class="schedule__title-container">
+                <p class="schedule__explanation">Plan your visit</p>
+                <h2 class="title section__title schedule__title">
+                  Museum hours
+                </h2>
+              </div>
+            </div>
+
+            <div
+              class="grid__item grid__item--tablet-5-6 grid__item--desktop-7-11"
+            >
+              <h3 class="title schedule__sub-title">The Met Fifth Avenue</h3>
+              <div class="schedule__list-content">
+                <ul class="schedule__list">
+                  <li class="schedule__time">10 am - 5 pm</li>
+                  <li class="schedule__time">10 am - 9 pm</li>
+                  <li class="schedule__time">Closed</li>
+                </ul>
+                <ul class="schedule__list">
+                  <li class="schedule__week">Sun, Mon, Tue, Thu</li>
+                  <li class="schedule__week">Fri, Sat</li>
+                  <li class="schedule__week">Wen</li>
+                </ul>
+              </div>
+              <div class="schedule__closed-on">
+                <p class="schedule__time">Closed on</p>
+                <p class="schedule__week">
+                  Thanksgiving Day, Dec 25, Jan 1, and the first Monday in May.
+                </p>
+              </div>
+              <h3 class="title schedule__sub-title">The Met Cloisters</h3>
+              <div class="schedule__list-content">
+                <ul class="schedule__list">
+                  <li class="schedule__time">10 am – 4.30 pm</li>
+                  <li class="schedule__time">Closed</li>
+                </ul>
+                <ul class="schedule__list">
+                  <li class="schedule__week">Thu - Tue</li>
+                  <li class="schedule__week">Wen</li>
+                </ul>
+              </div>
+              <div class="schedule__closed-on">
+                <p class="schedule__time">Closed on</p>
+                <p class="schedule__week">Thanksgiving Day, Dec 25, Jan 1</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section page__section now-on-view">
+        <div class="container">
+          <div class="now-on-view__title-container">
+            <h2 class="title section__title">Now On View</h2>
+            <p class="now-on-view__text">
+              Explore exhibition gallery guides, videos, articles, and more.
+            </p>
+          </div>
+          <div class="grid">
+            <div
+              class="gird__item grid__item--tablet-1-4 grid__item--desktop-1-8"
+            >
+              <div class="now-on-view__block-photo">
+                <img
+                  src="./images/now-on-view/1.png"
+                  alt=""
+                  class="now-on-view__photo"
+                />
+              </div>
+            </div>
+            <div
+              class="gird__item grid__item--tablet-5-6 grid__item--desktop-9-12"
+            >
+              <div class="now-on-view__block-photo">
+                <img
+                  src="./images/now-on-view/2.png"
+                  alt=""
+                  class="now-on-view__photo"
+                />
+              </div>
+            </div>
+          </div>
+          <h4 class="now-on-view__sub-title">A New Look at Old Masters</h4>
+          <p class="now-on-view__date-text">
+            December 12, 2020 – Through Spring 2023
+          </p>
+          <div class="grid">
+            <div
+              class="gird__item grid__item--tablet-1-3 grid__item--desktop-1-4 grid__item--1"
+            >
+              <div class="now-on-view__block-photo">
+                <img
+                  src="./images/now-on-view/3.png"
+                  alt=""
+                  class="now-on-view__photo"
+                />
+              </div>
+            </div>
+            <div
+              class="gird__item grid__item--tablet-4-6 grid__item--desktop-5-8 grid__item--2"
+            >
+              <div class="now-on-view__block-photo">
+                <img
+                  src="./images/now-on-view/4.png"
+                  alt=""
+                  class="now-on-view__photo"
+                />
+              </div>
+            </div>
+            <div
+              class="gird__item grid__item--desktop-9-12 grid__item--1-2 now-on-view__photo--tablet-hidden"
+            >
+              <div class="now-on-view__block-photo">
+                <img
+                  src="./images/now-on-view/5.png"
+                  alt=""
+                  class="now-on-view__photo"
+                />
+              </div>
+            </div>
+          </div>
+          <h4 class="now-on-view__sub-title">
+            Bodhisattvas of Wisdom, Compassion, and Power
+          </h4>
+          <p class="now-on-view__date-text">
+            March 27, 2021 – October 30, 2022
+          </p>
+          <div class="grid">
+            <div
+              class="gird__item grid__item--tablet-1-2 grid__item--desktop-1-4 grid__item--1"
+            >
+              <div class="now-on-view__block-photo">
+                <img
+                  src="./images/now-on-view/6.png"
+                  alt=""
+                  class="now-on-view__photo"
+                />
+              </div>
+            </div>
+            <div
+              class="gird__item grid__item--tablet-3-6 grid__item--desktop-5-12 grid__item--2"
+            >
+              <div class="now-on-view__block-photo">
+                <img
+                  src="./images/now-on-view/7.png"
+                  alt=""
+                  class="now-on-view__photo"
+                />
+              </div>
+            </div>
+          </div>
+          <h4 class="now-on-view__sub-title">
+            Inspiring Walt Disney: The Animation of French Decorative Arts
+          </h4>
+          <p class="now-on-view__date-text">
+            December 10, 2021 – March 6, 2022
+          </p>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
