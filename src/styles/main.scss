@@ -130,6 +130,8 @@ a {
     line-height: 32px;
     letter-spacing: -1.5px;
 
+    font-family: "Cinzel", serif;
+
     @include onTablet {
       line-height: 48px;
       font-size: 48px;
@@ -259,6 +261,8 @@ a {
     font-size: 24px;
     font-weight: 700;
     line-height: 30px;
+
+    text-transform: uppercase;
   }
 
   &__list-content {
@@ -274,6 +278,7 @@ a {
     font-size: 16px;
     font-weight: 700;
     line-height: 27px;
+    text-transform: uppercase;
   }
 
   &__week {
@@ -281,6 +286,7 @@ a {
     font-size: 16px;
     font-weight: 400;
     line-height: 27px;
+    text-transform: uppercase;
   }
 
   &__closed-on {
@@ -300,14 +306,16 @@ a {
   &__title-container {
     text-align: center;
     margin: 0 auto 48px auto;
-    width: 280px;
+
+    width: 100%;
+    max-width: 280px;
 
     @include onTablet {
-      width: 392px;
+      max-width: 392px;
     }
 
     @include onDesktop {
-      width: 325px;
+      max-width: 325px;
     }
   }
 
@@ -388,3 +396,131 @@ a {
 }
 
 //now-on-view end
+
+//button start
+
+.button {
+  display: block;
+  border: none;
+  cursor: pointer;
+
+  &-primary {
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 27px;
+
+    background-color: #d12d35;
+
+    height: 56px;
+    width: 100%;
+
+    @include onTablet {
+      margin: 0 auto;
+      max-width: 296px;
+    }
+    @include onDesktop {
+      max-width: 324px;
+    }
+
+    transition: all 0.3s;
+
+    &:hover {
+      background: #ae1c23;
+    }
+    &:active {
+      background: #eb343d;
+    }
+  }
+}
+
+//button end
+
+//explore-online start
+
+.explore-online {
+  &__content {
+    @include onDesktop {
+      display: flex;
+      align-items: baseline;
+      justify-content: center;
+      gap: 24px;
+    }
+  }
+
+  &__title {
+    margin: 0 auto 40px auto;
+    max-width: 280px;
+
+    text-align: center;
+
+    @include onTablet {
+      max-width: 392px;
+    }
+
+    @include onDesktop {
+      max-width: 498px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    &:not(:last-of-type) {
+      margin-bottom: 48px;
+
+      @include onDesktop {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__image {
+    margin: 0 0 24px 0;
+    display: block;
+
+    width: 100%;
+    max-width: 280px;
+
+    @include onTablet {
+      max-width: 392px;
+    }
+    @include onDesktop() {
+      max-width: 324px;
+    }
+  }
+
+  &__sub-title {
+    margin: 0 0 4px 0;
+    color: #d12d35;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 140%;
+  }
+
+  &__text {
+    color: #161616;
+    text-align: center;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    line-height: 27px;
+
+    width: 100%;
+    max-width: 280px;
+
+    @include onTablet {
+      max-width: 392px;
+    }
+    @include onDesktop() {
+      max-width: 324px;
+    }
+  }
+}
+
+//explore-online end
