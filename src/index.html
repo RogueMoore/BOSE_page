@@ -3,11 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Miami</title>
+    <title>Welcome to The Met</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="./styles/main.scss" />
     <script src="scripts/main.js" defer></script>
@@ -215,7 +218,9 @@
                 />
               </li>
               <li class="explore-online__item">
-                <h4 class="explore-online__sub-title">Collection Areas</h4>
+                <a href="#" class="explore-online__sub-title"
+                  >Collection Areas</a
+                >
               </li>
               <li class="explore-online__item">
                 <p class="explore-online__text">
@@ -233,7 +238,7 @@
                 />
               </li>
               <li class="explore-online__item">
-                <h4 class="explore-online__sub-title">Travel</h4>
+                <a href="#" class="explore-online__sub-title">Travel</a>
               </li>
               <li class="explore-online__item">
                 <p class="explore-online__text">
@@ -251,7 +256,9 @@
                 />
               </li>
               <li class="explore-online__item">
-                <h4 class="explore-online__sub-title">Virtual group tours</h4>
+                <a href="#" class="explore-online__sub-title"
+                  >Virtual group tours</a
+                >
               </li>
               <li class="explore-online__item">
                 <p class="explore-online__text">
@@ -261,6 +268,74 @@
                 </p>
               </li>
             </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section page__section contact-us">
+        <div class="container">
+          <h3 class="section__title title contact-us__title">Contact us</h3>
+
+          <div class="contact-us__content">
+            <div class="contact-us__content-info">
+              <div class="contact-us__content-address">
+                <h3 class="contact-us__sub-title">The Met Fifth Avenue</h3>
+                <p class="contact-us__text">Phone</p>
+                <a
+                  href="tel:+1 212-535-7710"
+                  class="contact-us__number contact-us__link"
+                  >+1 212-535-7710</a
+                >
+                <p class="contact-us__text">Address</p>
+                <a
+                  href="https://maps.app.goo.gl/pxTqeq1fumd38ZSx9"
+                  class="contact-us__address contact-us__link"
+                  >1000 Fifth Avenue New York, NY 10028</a
+                >
+              </div>
+              <div class="contact-us__content-address">
+                <h3 class="contact-us__sub-title">The Met Cloisters</h3>
+                <p class="contact-us__text">Phone</p>
+                <a
+                  href="tel:+1 212-923-3700"
+                  class="contact-us__number contact-us__link"
+                  >+1 212-923-3700</a
+                >
+                <p class="contact-us__text">Address</p>
+                <a
+                  href="https://maps.app.goo.gl/g7vh1fDCFZPupnmc9"
+                  class="contact-us__address contact-us__link"
+                  >99 Margaret Corbin Drive Fort Tryon Park New York, NY
+                  10040</a
+                >
+              </div>
+            </div>
+            <div class="contact-us__container-input input">
+              <form action="" class="contact-us__input input__field">
+                <input
+                  type="text"
+                  name="username"
+                  class="input__name input__form"
+                  placeholder="Name"
+                />
+
+                <input
+                  type="email"
+                  name="user-email"
+                  class="input__email input__form"
+                  placeholder="Email"
+                />
+
+                <textarea
+                  name="message"
+                  id="message"
+                  placeholder="Message"
+                  class="input__textarea input__form"
+                ></textarea>
+
+                <button class="button button-primary button--width">Send</button>
+              </form>
+            </div>
           </div>
         </div>
       </section>
