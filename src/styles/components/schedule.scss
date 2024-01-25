@@ -7,7 +7,7 @@
 
   &__explanation {
     width: fit-content;
-    color: #d12d35;
+    color: $red-main-color;
     font-size: 12px;
     font-weight: 700;
     line-height: 140%;
@@ -38,17 +38,12 @@
 
   &__time {
     color: #161616;
-    font-size: 16px;
     font-weight: 700;
-    line-height: 27px;
     text-transform: uppercase;
   }
 
   &__week {
     color: #161616;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 27px;
     text-transform: uppercase;
   }
 
