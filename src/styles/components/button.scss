@@ -1,0 +1,41 @@
+.button {
+  display: block;
+  border: none;
+  cursor: pointer;
+
+  &-primary {
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 27px;
+
+    background-color: #d12d35;
+
+    height: 56px;
+    width: 100%;
+
+    @include onTablet {
+      margin: 0 auto;
+      max-width: 296px;
+    }
+    @include onDesktop {
+      max-width: 324px;
+    }
+
+    transition: all 0.3s;
+
+    &:hover {
+      background: #ae1c23;
+    }
+    &:active {
+      background: #eb343d;
+    }
+  }
+
+  &--width {
+    @include onDesktop {
+      max-width: 411px;
+    }
+  }
+}

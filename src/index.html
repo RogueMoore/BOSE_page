@@ -24,8 +24,19 @@
             MET</a
           >
           <div class="icon-container">
+            <div class="icon--content-hover">
+              <p class="icon__info">The Met Fifth Avenue</p>
+              <a href="tel:+1 212-535-7710" class="icon__info">
+                +1 212-535-7710
+              </a>
+              <p class="icon__info">The Met Cloisters</p>
+              <a href="tel:+1 212-923-3700" class="icon__info">
+                +1 212-923-3700
+              </a>
+            </div>
             <a href="#" class="icon icon--call"></a>
-            <a href="#" class="icon icon--burger"></a>
+
+            <a href="#menu" class="icon icon--burger"></a>
           </div>
         </div>
         <h1 class="title header__title">
@@ -34,7 +45,44 @@
         </h1>
       </div>
     </header>
+    <aside class="menu" id="menu">
+      <div class="container">
+        <div class="top-actions top-actions--padding">
+          <a href="#" class="logo"
+            >THE <br />
+            MET</a
+          >
 
+          <a href="#" class="icon icon--cross"></a>
+        </div>
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="#" class="menu__link"> Home </a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link"> About Us </a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link"> Now on view </a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link"> Explore Online </a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link"> Contacts </a>
+          </li>
+        </ul>
+
+        <div class="menu__numbers-bundle">
+          <p class="menu__text">The Met Fifth Avenue</p>
+          <a href="tel:+1 212-535-7710" class="menu__number">+1 212-535-7710</a>
+          <p class="menu__text">The Met Cloisters</p>
+          <a href="tel:+1 212-923-3700" class="menu__number">+1 212-923-3700</a>
+        </div>
+
+        <p class="menu__call-to-order">call to order</p>
+      </div>
+    </aside>
     <main>
       <section class="page__section section schedule">
         <div class="container">
@@ -333,12 +381,15 @@
                   class="input__textarea input__form"
                 ></textarea>
 
-                <button class="button button-primary button--width">Send</button>
+                <button class="button button-primary button--width">
+                  Send
+                </button>
               </form>
             </div>
           </div>
         </div>
       </section>
     </main>
+    <footer class="footer"></footer>
   </body>
 </html>
